@@ -37,7 +37,10 @@ const Counter = ({ value }) => {
 
 const WhoWeAre = () => {
   return (
-    <section className="py-20 px-5 text-center bg-white overflow-hidden">
+    <section className="py-20 px-5 text-center overflow-hidden" style={{
+        background:
+          "linear-gradient(90deg, rgba(225,244,255,1) 0%, rgba(204,230,255,1) 50%, rgba(255,255,255,1) 100%)",
+      }}>
       <motion.div
         initial={{ x: "10%", opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}

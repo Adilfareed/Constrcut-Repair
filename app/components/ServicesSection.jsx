@@ -44,12 +44,13 @@ const ServicesSection = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
           {services.map((service, index) => (
             <motion.div
               key={index}
               custom={index}
               variants={cardVariants}
+              
               initial="hidden"
               animate="visible"
               className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 text-center"
